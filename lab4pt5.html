@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana;
+      color: #412f69;
+      margin: 0;
+    }
+
+    header {
+      background-color: #412f69;
+      padding: 15px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: white;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .menu {
+      width: 20%;
+      text-align: center;
+      background-color: #e5e5e5;
+      padding: 8px;
+      margin-top: 7px;
+      position: sticky;
+      top: 0;
+    }
+
+    .menu a {
+      display: block;
+      width: 100%;
+      color: black;
+    }
+
+    .main {
+      width: 60%;
+      padding: 0 20px;
+    }
+
+    .right {
+      width: 20%;
+      background-color: #ffffff;
+      padding: 15px;
+      margin-top: 7px;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 620px) {
+      /* For mobile phones: */
+      .menu,
+      .main,
+      .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>About Me</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="menu">
+      <a href="https://thekey.company/blogs/blog-updates/keyboard-university">Introduction to Mechanical Keyboards</a>
+      <br>
+      <a href="https://www.bluemountain.ca/things-to-do/skiing-and-snowboarding">Skiing Areas</a>
+      <br>
+      <a href="https://www.ableton.com/">Music Software I Use</a>
+    </div>
+
+    <div class="main">
+      <h2>About</h2>
+      <p>Hey everyone! My name is Will, and I am a student attending Humber College currently. I am studying Computer
+        Programming as I have an interest in learning about the latest and greatest on technology!</p>
+    </div>
+
+    <div class="right">
+      <h2 style="text-align: left; color: #412f69;">Hobbies</h2>
+      <p style="text-align: left; color: #412f69;">Some of my hobbies include: mechanical keyboards, skiing, and
+        making music! Below you'll find 3 links that'll help get a better understanding of my hobbies.</p>
+    </div>
+
+  </div>
+
+  <footer style="background-color:#776c95;text-align:center;padding:10px;margin-top:7px;">© copyright
+    w3schools.com</footer>
+
+</body>
+
+</html>

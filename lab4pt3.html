@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .table-wrapper {
+            display: inline-block;
+            padding: 20px;
+            outline: 1px solid rgb(0, 0, 0);
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        table {
+            border: 1px solid rgb(0, 0, 0);
+            border-collapse: collapse;
+            width: auto;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            text-align: left;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f7ff65;
+        }
+
+        caption{
+            text-align: center;
+            font-weight: bold;
+            padding-bottom: 14px;
+            font-size: x-large;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<div class="table-wrapper">
+    <table>
+        <caption>Employee Table</caption>
+        <tr>
+            <th>Department</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Year of Service</th>
+        </tr>
+        <tr>
+            <th rowspan="3" style="padding-bottom: 40px;">Editorial</th>
+            <td>Joel Murach</td>
+            <td>joelmurach@yahoo.com</td>
+            <td style="text-align: right;">22</td>
+        </tr>
+        <tr>
+            <td>Anne Boelun</td>
+            <td>anene@murach.com</td>
+            <td style="text-align: right;">34</td>
+        </tr>
+        <tr>
+            <td>Zak Ruvalcaba</td>
+            <td>zak@modulermedia.com</td>
+            <td style="text-align: right;">4</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="background-color: white; padding-bottom: 30px;">Marketing</th>
+            <td>Judy Taylor</td>
+            <td>judy@murach.com</td>
+            <td style="text-align: right;">39</td>
+        </tr>
+        <tr>
+            <td>Cyndi Vasquez</td>
+            <td>cyndi@murach.com</td>
+            <td style="text-align: right;">10</td>
+        </tr>
+        <tr>
+            <th rowspan="2" style="background-color: white; padding-bottom: 30px;">Customer Service</th>
+            <td>Kelly Slivkoff</td>
+            <td>kelly@murach.com</td>
+            <td style="text-align: right;">25</td>
+        </tr>
+        <tr>
+            <td>Juliette Baylon</td>
+            <td>juliette@murach.com</td>
+            <td style="text-align: right;">1</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right; font-weight: bold; padding-right: 10px;">Total Years of Service</td>
+            <td style="font-weight: bold; text-align: right; padding-right: 10px;">105</td>
+        </tr>
+
+
+    </table>
+</div>
+
+
+
+</body>
+
+
+</html>
