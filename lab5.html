@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Lab 5</title>
+
+    <style>
+        form{
+            border: solid rgb(255, 0, 0) 2px;
+        }
+        input{
+            
+        }
+        .container{
+            padding-left: 40x;
+            padding-right: 40px;
+            
+        }
+        .table-wrapper {
+            display: inline-block;
+            outline: 10px solid rgb(74, 196, 201);
+        }
+
+        
+        input[type="text"],
+        input[type="tel"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 250px; 
+            margin: 0 auto; 
+            display: inline-block 
+        }
+        
+input[type="tel"] {
+    width: 180px; 
+    
+    margin-right: 10px; 
+}
+
+select[name="countryCode"] {
+    width: 40px;
+}
+
+
+span {
+        display: inline-block;
+        color: rgb(141, 66, 66);
+        font-weight: bold;
+        font-size: small;
+        font-family: sans-serif;
+        padding-left: 10px;
+        padding-right: 60px; 
+    }
+
+#Music, #Movies, #Sports, #Travel{
+    color: rgb(141, 66, 66);
+}
+input[type="submit"] {
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 5px 50px;
+    margin-right: 60px;
+    margin-left: 65px;
+}
+input[type="reset"] {
+    font-size: 16px; /* Adjust the font size as needed */
+    padding: 4px 60px; /* Adjust padding to control button size */
+    margin-left: 10px; /* Add margin to create space between buttons */
+}
+    
+        
+    </style>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div class="table-wrapper">
+    <form>
+    <h2 style="color: red; font-family: sans-serif; text-align: center;">
+        STUDENT REGISTRATION FORM</h2>
+
+    <span>First Name</span><input type="text" name="name" 
+    id="Fname" placeholder="Enter First Name">
+    
+    <br><br>
+
+    <span>Last Name</span><input type="text" name="lname" 
+    id="Lname" placeholder="Enter Last Name" required>
+    <br><br>
+
+    <span style="padding-right: 120px;">Gender</span>
+    <input type="radio" name="gender" id="Male" value="Male">
+    <label for="Male" id="Male">Male</label>
+    
+    <input type="radio" name="gender" id="Female" value="Female">
+    <label for="Female" id="Female">Female</label>
+    
+    <br><br>
+
+    <span style="padding-right: 95px">Age</span> <input type="text" name="Age" id="Age" 
+        placeholder="Age" required>
+    <br><br>
+
+    <span style="padding-right: 42px;">Date of Birth</span> <input type="date" name="dateOfBirth" id="dateOfBirth"
+    value="dateOfBirth" required>
+    <br><br>
+
+    <span style="padding-right: 30px;">Email Address</span> <input type="text" name="Email" id="Email" 
+    placeholder="Enter your email">
+    <br><br>
+
+    <span style="padding-right: 63px;">Password</span><input type="text" name="password" 
+    id="password" placeholder="Confirm Password" required>
+    <br><br>
+    
+    
+    <div>
+        <label for="phone"><span style="padding-right: 28px;">Phone Number</span></label>
+        <select name="countryCode">
+            <option value="Canada">+1</option>
+            <option value="Japan">+81</option>
+            <option value="India">+91</option>
+            <option value="UK">+44</option>
+            <option value="France">+33</option>
+        </select>
+        <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required>
+    </div>
+    <br><br>
+    
+    <span>Address</span>
+    <textarea id="address" name="address" rows="8" cols="40" 
+    placeholder="Enter your address" required></textarea>
+    <br><br>
+
+   
+    <span style="padding-right: 83px;">State</span><select name="State">
+        <option value="select">-- Select your state --</option>
+        <option value="CA">California</option>
+        <option value="AK">Alaska</option>
+        <option value="FL">Florida</option>
+        <option value="IA">Iowa</option>
+    </select>
+    <br><br>
+
+    <span>Pin Code</span><input type="text" name="Pin" placeholder="Enter your pin code">
+    <br><br>
+    <span>Hobbies</span><input type="checkbox" name="Music" id="Music" value="Music">
+    <label for="Music" id="Music">Music</label>
+
+    <input type="checkbox" name="Movies" id="Movies" value="Movies">
+    <label for="Movies" id="Movies">Movies</label>
+
+    <input type="checkbox" name="Sports" id="Sports" value="Sports">
+    <label for="Sports" id="Sports">Sports</label>
+
+    <input type="checkbox" name="Travel" id="Travel" value="Travel">
+    <label for="Travel" id="Travel">Travel</label>
+    <br><br>
+
+    <span>Upload Photo</span><input type="file" name="Photo" id="Photo" value="Photo" required>
+    <br><br>
+
+    <input type="checkbox" name="declare" id="declare" value="declare" required>
+    <label for="declare" id="declare"><span style="color: black;">I hearby declare that the above
+        information provided is true and correct.</span>
+    </label>
+    <br><br>
+
+    <!-- Google reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="key_that_I_don't_have_D;"></div><br>
+  
+    <input type="submit" value="Register">
+
+    <input type="reset" value="Reset">
+    <br><br>
+    </form>
+</div>
+
+</body>
+
+
+</html>
