@@ -12,6 +12,9 @@ Web Design
 - [Lab 5 Part 1](lab5.html)
 - [Lab 5 Part 2](lab5pt2.html)
 
+![lab5pt1img](https://github.com/willkodes/CPAN134/assets/158788382/718a9afd-1ef0-4c7e-ad00-60cc0129610e)
+![lab5pt2](https://github.com/willkodes/CPAN134/assets/158788382/c97dde33-b72b-4905-aca4-c9a8c808e573)
+
 ## Assignment 1
 - [index](index.html)
 - [about](aboutMe.html)
