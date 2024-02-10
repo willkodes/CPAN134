@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+
+        #CVV{
+            width: 100px; 
+            margin: 0 auto; 
+            display: inline-block 
+        }
+        select[name="months"]{
+            width: 150px; 
+        }
+        #year{
+            width: 80px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <h2 style="font-family: Arial, Helvetica, sans-serif;">Payment</h2>
+    <hr>
+    <span style="padding-right: 10px;">Card Holder's Name</span> <input type="text" name="Cname" id="Cname">
+    <br><br>
+
+    <span style="padding-right: 53px;">Card Number</span> <input type="number" name="Cnum" id="Cnum">
+    <br><br>
+
+    <span style="padding-right: 62px;">Card Expiry</span>
+    <select name="months">
+        <option value="Jan">January</option>
+        <option value="Feb">Febuary</option>
+        <option value="Mar">March</option>
+        <option value="Apr">April</option>
+        <option value="May">May</option>
+        <option value="Jun">June</option>
+        <option value="Jul">July</option>
+        <option value="Aug">August</option>
+        <option value="Oct">October</option>
+        <option value="Nov">November</option>
+        <option value="Dec">December</option>
+    </select>
+    <input type="number" id="year" name="year" min="2000" max="2050" step="1">
+    <br><br>
+    <span style="padding-right: 72px;">Card CVV</span> <input type="number" name="CVV" id="CVV">
+    
+
+
+</body>
+
+</html>
