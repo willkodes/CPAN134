@@ -1,0 +1,52 @@
+header img{
+    float: inline-start;
+}
+header img, h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1 {
+    margin-top: 0px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: orange;
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 1);
+}
+header h3{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    font-weight: 800;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+h2::first-letter{
+    font-size: 3em;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+.link-list a:link{
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+main a:hover{
+    color: green;
+}
+main a:visited {
+    color: black;
+}
+main h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+footer{
+    text-align: center;
+}
