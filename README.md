@@ -18,7 +18,7 @@ Web Design
 ## Lab 6
 - [Lab 6 Part 1](lab6.html)
 - [Lab 6 Part 2](lab6pt2.html)
-- ![Image Alt text](pumpking.gif)
+- ![Image Alt text](pumpkin.gif)
 
 ## Assignment 1
 - [index](index.html)
