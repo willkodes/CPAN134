@@ -24,3 +24,9 @@ Web Design
 - [index](index.html)
 - [about](aboutMe.html)
 - [My Dreams](myDreams.html)
+
+## Assignment 2
+- [index](indexLab7.html)
+- [about](aboutMeLab7.html)
+- [my dreams](myDreamsLab7.html)
+- [main css](main7.css)
