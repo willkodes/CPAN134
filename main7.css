@@ -1,0 +1,29 @@
+* { /** Resetter */
+    margin: 0;
+    padding: 0;
+}
+#purple{
+    color: rgb(181, 122, 216)
+}
+#darkerPurple{
+    color:rgb(76, 38, 212);
+}
+p{
+    font-size: large;
+    padding-top: 2em;
+}
+h2{
+    padding: 1em;
+}
+ul{
+    margin: 1em 1em;
+}
+h1{
+    color:rgb(76, 38, 212);  
+}
+ol{
+    margin: 1em;
+  }
+#brown{
+    color:brown;
+}
