@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+
+    <script>
+       
+        // Empty inventory object
+        var inventory = {};
+
+        // Add product function
+        function addProduct(productID, name, quantity) {
+            if (!inventory[productID]) { // Check if productID doesn't already exist
+                inventory[productID] = { name: name, quantity: quantity };
+                console.log("Product added successfully.");
+            } else {
+                console.log("Product with the same ID already exists.");
+            }
+        }
+
+        // Display inventory function
+        function displayInventory() {
+            console.log("Current Inventory:");
+            for (var productID in inventory) {
+                console.log("Product ID:", productID, "- Name:", inventory[productID].name, "- Quantity:", inventory[productID].quantity);
+            }
+        }
+
+        // Find product by ID
+        function findProduct(productID) {
+            if (inventory[productID]) {
+                console.log("Product ID:", productID, "- Name:", inventory[productID].name, "- Quantity:", inventory[productID].quantity);
+            } else {
+                console.log("Product not found.");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
