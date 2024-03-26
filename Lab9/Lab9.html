@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+
+    <script>
+       
+       // inventory object
+        var inventory = {
+            products: []  // store in array
+        };
+
+        function addProduct(productID, name, quantity){
+            var product = {
+                productID: productID,
+                name: name,
+                quantity: quantity
+            };
+        inventory.products.push(product); // Add product to inventory
+        }
+
+        function displayInventory(){
+            return document.getElementById("p4").innerHTML = inventory.products;
+        }
+
+        function findProduct(productID){
+            if (productID === inventory.productID){
+                return {
+                    name: inventory.product.name,
+                    quantity: inventory.product.quantity
+                }
+            }
+            else {
+                document.getElementById("p3").innerHTML = "Message not found";
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
