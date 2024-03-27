@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+
+        // Empty inventory object
+        var inventory = {};
+
+        // Add product function
+        function addProduct(productID, name, quantity, price) {
+            if (!inventory[productID]) { // Check if productID doesn't already exist
+                inventory[productID] = { name: name, quantity: quantity, price: price};
+                console.log("Product added successfully.");
+            } else {
+                console.log("Product with the same ID already exists.");
+            }
+        }
+
+        // Some example products 
+        addProduct(1,"Car Parts", 10, 40);
+        addProduct(2,"Snacks", 7, 5);
+        addProduct(3,"Pets", 4, 20);
+        addProduct(7,"Misc", 8, 10);
+
+        // Display inventory function
+        function displayInventory() {
+            console.log("Current Inventory:");
+            for (var productID in inventory) {
+                console.log("Product ID:", productID, "- Name:", inventory[productID].name, "- Quantity:", inventory[productID].quantity, "- Price:", inventory[productID].price);
+                
+                // Checks for low stock and alerts user
+                if (inventory[productID].quantity <=5){
+                console.log("Low stock on ", inventory[productID].name, "! Get more soon!")
+                }
+            }
+        }
+        
+        // Remove product function
+        function removeProduct(){
+            var userInput = prompt("Enter productID to remove");
+            if (inventory[userInput]){
+                delete inventory[userInput];
+                console.log("Successfully deleted!")
+
+            } else {
+                console.log("The productID entered either does not exist or is incorrect.")
+            }
+        }
+
+        // Total value function
+        function totalValue() {
+            let total = 0; // Initialize total value variable inside the function
+
+            for (var productID in inventory) {
+                if (inventory[productID] && inventory[productID].quantity && inventory[productID].price) {
+                    total += inventory[productID].quantity * inventory[productID].price; // Add to total value
+                }
+            }
+
+            console.log("The total value is", total);  
+        }
+
+
+        // Find product by ID
+        function findProduct(productID) {
+            if (inventory[productID]) {
+                console.log("Product ID:", productID, "- Name:", inventory[productID].name, "- Quantity:", inventory[productID].quantity);
+            } else {
+                console.log("Product not found.");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
