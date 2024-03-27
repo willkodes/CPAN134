@@ -36,3 +36,6 @@ Web Design
 
 ## Lab 9
 - [lab9](Lab9/Lab9.html)
+
+## Assignment 3
+- [Assignment3](Assignment3/Assignment3.html)
