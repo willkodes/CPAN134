@@ -39,3 +39,7 @@ Web Design
 
 ## Assignment 3
 - [Assignment3](Assignment3/Assignment3.html)
+
+## Lab10
+- [index](Lab10/index.html)
+- [script](Lab10/script.js)
