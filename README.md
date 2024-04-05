@@ -41,5 +41,9 @@ Web Design
 - [Assignment3](Assignment3/Assignment3.html)
 
 ## Lab10
-- [index](Lab10/index.html)
+- [index html](Lab10/index.html)
 - [script](Lab10/script.js)
+
+## Assignment 4
+- [Assignment4 html](Assignment4/Assignment4.html)
+- [Assignment4 script](Assignment4/Assignment4Script.js)
